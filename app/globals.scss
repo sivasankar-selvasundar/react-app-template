@@ -1,0 +1,463 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+.rudra-bg-gray-500 {
+  @apply bg-gray-500;
+  @apply hover:bg-blue-200;
+  @apply flex;
+  @apply justify-end;
+  @apply h-full;
+}
+
+.rudra-w-full {
+  @apply w-full;
+}
+
+/* Custom background colors */
+.rudra-bg-gray-500 {
+  @apply bg-gray-500;
+}
+
+.rudra-bg-black {
+  @apply bg-black;
+}
+
+.rudra-bg-white {
+  @apply bg-white;
+}
+
+.rudra-bg-blue-500 {
+  @apply bg-blue-500;
+}
+
+.rudra-bg-red-500 {
+  @apply bg-red-500;
+}
+
+/* Custom text colors */
+.rudra-text-gray-500 {
+  @apply text-gray-500;
+}
+
+.rudra-text-black {
+  @apply text-black;
+}
+
+.rudra-text-white {
+  @apply text-white;
+}
+
+.rudra-text-blue-500 {
+  @apply text-blue-500;
+}
+
+.rudra-text-red-500 {
+  @apply text-red-500;
+}
+
+/* Custom padding */
+.rudra-p-4 {
+  @apply p-4;
+}
+
+.rudra-p-8 {
+  @apply p-8;
+}
+
+.rudra-py-4 {
+  @apply py-4;
+}
+
+.rudra-px-4 {
+  @apply px-4;
+}
+
+/* Custom margin */
+.rudra-m-4 {
+  @apply m-4;
+}
+
+.rudra-m-8 {
+  @apply m-8;
+}
+
+.rudra-my-4 {
+  @apply my-4;
+}
+
+.rudra-mx-4 {
+  @apply mx-4;
+}
+
+/* Custom flexbox utilities */
+.rudra-flex {
+  @apply flex;
+}
+
+.rudra-items-center {
+  @apply items-center;
+}
+
+.rudra-justify-center {
+  @apply justify-center;
+}
+
+.rudra-justify-end {
+  @apply justify-end;
+}
+
+.rudra-flex-col {
+  @apply flex-col;
+}
+
+/* Custom typography */
+.rudra-text-2xl {
+  @apply text-2xl;
+}
+
+.rudra-text-4xl {
+  @apply text-4xl;
+}
+
+.rudra-font-bold {
+  @apply font-bold;
+}
+
+.rudra-font-medium {
+  @apply font-medium;
+}
+
+.rudra-font-light {
+  @apply font-light;
+}
+
+/* Custom borders */
+.rudra-border {
+  @apply border;
+}
+
+.rudra-border-gray-500 {
+  @apply border-gray-500;
+}
+
+.rudra-rounded-lg {
+  @apply rounded-lg;
+}
+
+/* Custom shadows */
+.rudra-shadow {
+  @apply shadow;
+}
+
+.rudra-shadow-lg {
+  @apply shadow-lg;
+}
+
+/* Custom width and height */
+.rudra-w-full {
+  @apply w-full;
+}
+
+.rudra-w-1-2 {
+  @apply w-1/2;
+}
+
+.rudra-h-full {
+  @apply h-full;
+}
+
+.rudra-h-1-2 {
+  @apply h-1/2;
+}
+
+.rudra-text {
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+}
+
+.rudra-text-white {
+  @apply text-white;
+}
+
+.rudra-flex-1 {
+  @apply flex-1;
+}
+
+.rudra-shadow-md {
+  @apply shadow-md;
+}
+
+hover:rudra-shadow-lg {
+  @apply shadow-lg;
+}
+.rudra-transform {
+  @apply transform;
+}
+
+.rudra-transition {
+  @apply transition;
+}
+
+.rudra-duration-300 {
+  @apply duration-300;
+}
+.rudra-ease-in-out {
+  @apply ease-in-out;
+}
+
+.rudra-translate-y-1:hover {
+  @apply translate-y-1;
+}
+
+hover:rudra-bg-gray-100 {
+  @apply hover:bg-gray-100;
+}
+
+.rudra-px-6 {
+  @apply px-6;
+}
+
+.rudra-py-3 {
+  @apply py-3;
+}
+
+.rudra-bg-white {
+  @apply bg-white;
+}
+
+.rudra-text-black {
+  @apply text-black;
+}
+
+.rudra-absolute {
+  @apply absolute;
+}
+
+.rudra-top-0 {
+  @apply top-0;
+}
+
+.rudra-right-0 {
+  @apply right-0;
+}
+
+.rudra-z-50 {
+  @apply z-50;
+}
+
+.rudra-flex-grow-1 {
+  @apply flex-1;
+}
+
+.rudra-icon-button {
+  @apply text-2xl;
+  @apply bg-none;
+  @apply p-1;
+}
+
+.rudra-icon-button:hover {
+  @apply bg-gray-400;
+}
+
+.rudra-text-red {
+  @apply text-red-500;
+}
+
+.rudra-text-blue {
+  @apply text-blue-500;
+}
+
+.rudra-font-mono {
+  @apply font-mono;
+}
+
+.rudra-justify-between {
+  @apply justify-between;
+}
+
+.rudra-nav-header {
+  @apply flex;
+  @apply justify-between;
+  @apply rounded-2xl;
+  @apply shadow-md;
+}
+
+.rudra-nav-header-button {
+  @apply bg-none;
+  @apply p-1;
+}
+
+.selected-tab {
+  @apply rounded-lg;
+  @apply bg-blue-500;
+  @apply p-1;
+  @apply text-white;
+}
+
+.rudra-container {
+  border: none;
+  background-color: rgb(35, 129, 222);
+
+  min-height: 5vh;
+  @apply shadow-md;
+}
+
+.rudra-text-lg {
+  @apply text-lg;
+}
+
+.rudra-font-bold {
+  @apply font-bold;
+}
+
+.rudra-p-4 {
+  @apply p-4;
+}
+
+.rudra-p-2 {
+  @apply p-2;
+}
+
+.rudra-input-container,
+.rudra-toggle-container {
+  @apply shadow;
+  @apply appearance-none;
+  @apply border;
+  @apply rounded;
+  @apply w-full;
+  @apply text-gray-700;
+  @apply leading-tight;
+  @apply focus:outline-none;
+  @apply focus:ring-2;
+  @apply focus:ring-blue-500;
+  @apply p-2;
+}
+
+.rudra-toggle-container {
+  @apply p-2;
+}
+
+.rudra-input-label {
+  @apply block;
+  @apply text-gray-400;
+  @apply text-sm;
+}
+
+.rudra-input-holder {
+  @apply shadow;
+  @apply appearance-none;
+  @apply border;
+  @apply rounded;
+  @apply w-full;
+  @apply flex;
+  @apply justify-between;
+  @apply p-2;
+
+  @apply focus:outline-none;
+  @apply focus:ring-2;
+  @apply focus:ring-blue-500;
+}
+
+.rudra-error-message {
+}
+
+.rudra-input-field {
+  @apply flex-1;
+  @apply text-gray-700;
+  @apply leading-tight;
+  @apply focus:appearance-none;
+  @apply border-none;
+}
+
+.rudra-error {
+}
+
+.rudra-input-icon {
+  @apply rudra-text-blue;
+  @apply text-lg;
+}
+
+.rudra-text-white {
+  @apply text-white;
+}
+
+.rudra-select-field {
+  @apply w-full;
+  @apply text-gray-700;
+  @apply leading-tight;
+  @apply focus:appearance-none;
+  @apply border-none;
+  @apply p-1;
+}
+
+.classic-table {
+  @apply text-sm;
+  @apply text-left;
+  @apply text-gray-500;
+  @apply dark:text-gray-400;
+}
+.rudra-table-container {
+  @apply shadow-md;
+  @apply sm:rounded-lg;
+  @apply bg-white;
+  @apply m-1;
+  @apply p-2;
+}
+
+.classic-table > thead {
+  @apply text-xs;
+  @apply text-gray-700;
+  @apply uppercase;
+  @apply bg-gray-50;
+  @apply dark:bg-gray-700;
+  @apply dark:text-gray-400;
+}
+
+.rudra-classic-button {
+  @apply p-1;
+  @apply px-3;
+  @apply py-2;
+  @apply bg-blue-500;
+  @apply rounded-lg;
+  @apply text-white;
+  @apply shadow-xl;
+}
+
+.rudra-classic-text {
+  @apply p-2;
+  @apply shadow-lg;
+}
