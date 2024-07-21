@@ -1,3 +1,3 @@
-interface IHandler{
-    handleRequest(requestBody: any): Promise<any>
+interface IHandler {
+  handleRequest(requestBody: any): Promise<any>;
 }
