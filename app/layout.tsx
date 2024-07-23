@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      <p className="fixed bottom-0 right-0 p-4 text-center bg-gray-800 text-white">  Build Using Rudra
+      </p>
+      </body>
     </html>
   );
 }

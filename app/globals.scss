@@ -255,6 +255,10 @@ hover:rudra-bg-gray-100 {
   @apply py-3;
 }
 
+.rudra-p-2 {
+  @apply p-2;
+}
+
 .rudra-bg-white {
   @apply bg-white;
 }
@@ -329,9 +333,6 @@ hover:rudra-bg-gray-100 {
 }
 
 .rudra-container {
-  border: none;
-  background-color: rgb(35, 129, 222);
-
   min-height: 5vh;
   @apply shadow-md;
 }
@@ -342,6 +343,10 @@ hover:rudra-bg-gray-100 {
 
 .rudra-font-bold {
   @apply font-bold;
+}
+
+.rudra-shadow-2xl{
+  @apply shadow-2xl
 }
 
 .rudra-p-4 {
@@ -461,3 +466,14 @@ hover:rudra-bg-gray-100 {
   @apply p-2;
   @apply shadow-lg;
 }
+
+.rudra-rounded-lg{
+  @apply rounded-lg
+}
+
+.rudra-text {
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+}
+
