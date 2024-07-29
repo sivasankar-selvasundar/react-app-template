@@ -5,7 +5,8 @@ import { DataContext, DataType } from "./dataContext";
 const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
   
   const [contextData, setContextData] = useState<DataType>({
-    properties: new Map<string, any>()
+    properties: new Map<string, any>(),
+    loading: true
   } as DataType);
 
 
@@ -36,8 +37,10 @@ const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
     ) => {
       setContextData((_oldData) => ({
         ..._oldData,
+        loading: false,
         properties: properties,
       }));
+
     },
     []
   );

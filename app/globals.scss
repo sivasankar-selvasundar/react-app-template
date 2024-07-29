@@ -37,7 +37,6 @@ body {
 }
 
 
-
 .rudra-bg-gray-500 {
   @apply bg-gray-500;
   @apply hover:bg-blue-200;
@@ -283,6 +282,10 @@ hover:rudra-bg-gray-100 {
   @apply right-0;
 }
 
+.rudra-bottom-0 {
+  @apply bottom-0;
+}
+
 .rudra-z-50 {
   @apply z-50;
 }
@@ -339,6 +342,10 @@ hover:rudra-bg-gray-100 {
 .rudra-container {
   min-height: 5vh;
   @apply shadow-md;
+}
+
+.rudra-overflow-y-scroll {
+  
 }
 
 .rudra-text-lg {
@@ -466,6 +473,15 @@ hover:rudra-bg-gray-100 {
   @apply shadow-xl;
 }
 
+.rudra-classic-button-style {
+  @apply p-1;
+  @apply px-3;
+  @apply py-2;
+  @apply rounded-lg;
+  @apply text-white;
+  @apply shadow-xl;
+}
+
 .rudra-classic-text {
   @apply p-2;
   @apply shadow-lg;
@@ -479,5 +495,73 @@ hover:rudra-bg-gray-100 {
   @apply flex;
   @apply justify-center;
   @apply items-center;
+  max-height: 80%;
 }
 
+.rudra-equal-flex-items{
+  flex: 1 1 0;
+}
+
+.rudra-p-8{
+  @apply p-8;
+}
+
+
+
+.rudra-nav-header.new-style{
+  flex-direction: column;
+  min-width: 17rem;
+}
+.rudra-nav-header.new-style.collapsed{
+  min-width: 0;
+}
+
+.navigation-root {
+  height: 100vh
+}
+
+.rudra-font-small{
+  @apply font-thin;
+ font-size: 0.5rem;
+}
+
+
+@media ( max-width: 768px) { /* Adjust breakpoint as needed */
+  .rudra-nav-header.new-style{
+    flex-direction: column;
+    min-width: auto
+  }
+  .rudra-nav-header.new-style.collapsed {
+    width: 0;
+  }
+}
+
+.rudra-classic-button:disabled{
+  @apply bg-gray-500
+}
+
+.rudra-flex-col-reverse {
+  @apply flex-col-reverse;
+}
+
+
+.rudra-m-1{
+  @apply m-1;
+}
+
+.rudra-m-2{
+  @apply m-2;
+}
+
+.rudra-chat-height{
+  max-height: 80%;
+  overflow-y: scroll;
+}
+
+.rudra-text-2xl{
+  @apply text-2xl;
+}
+
+.rudra-text-color-blue-500{
+  @apply text-blue-500;
+}

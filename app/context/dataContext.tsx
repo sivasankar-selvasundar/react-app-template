@@ -2,10 +2,12 @@
 import {createContext} from 'react';
 
 export interface DataType {
+  loading: boolean,
   properties: Map<string, any>
 }
 
 export interface DataContextType {
+
   contextData: DataType,
   addProperty: (key: string, value: any) => void;
   loadInitialData: (properties: Map<string, any>) => void;
